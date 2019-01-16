@@ -9,15 +9,25 @@ class App extends Component {
     super()
 
     this.state = {
-      companyName: 'Jiggy',
+      companyName: 'Company Name',
       companyPrimaryColor: '#666666',
-      companyPrimaryTextColor: '',
+      companyPrimaryTextColor: '#00FFFF',
       companySecondaryColor: '#666666',
       companySecondaryTextColor: '',
       companyTertiaryColor: '#666666',
       companyTertiaryTextColor: '',
     }
+
+    this.handleCompanyNameClick = this.handleCompanyNameClick.bind( this )
   }
+
+  handleCompanyNameClick(newName) {
+    console.log(newName)
+    this.setState({
+      companyName: newName
+    })
+  }
+
   render() {
     const {
       companyName,
@@ -30,7 +40,7 @@ class App extends Component {
     } = this.state
     return (
       <div className="App">
-        <Header companyName={companyName} companyPrimaryColor={companyPrimaryColor} companyPrimaryTextColor={companyPrimaryTextColor}/>
+        <Header handleCompanyNameClickFn={this.handleCompanyNameClick} companyName={companyName} companyPrimaryColor={companyPrimaryColor} companyPrimaryTextColor={companyPrimaryTextColor}/>
       </div>
     );
   }

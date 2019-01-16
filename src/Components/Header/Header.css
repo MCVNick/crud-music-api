@@ -1,4 +1,10 @@
 .companyName {
+    display: inline-block;
+    width: 100vw;
+    height: 30px;
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+    line-height: 25px;
     text-align: left;
-    vertical-align: middle;
 }

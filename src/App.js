@@ -9,20 +9,19 @@ class App extends Component {
     super()
 
     this.state = {
-      companyName: 'Company Name',
+      companyName: '',
       companyPrimaryColor: '#666666',
       companyPrimaryTextColor: '#00FFFF',
       companySecondaryColor: '#666666',
       companySecondaryTextColor: '',
       companyTertiaryColor: '#666666',
-      companyTertiaryTextColor: '',
+      companyTertiaryTextColor: ''
     }
 
     this.handleCompanyNameClick = this.handleCompanyNameClick.bind( this )
   }
 
   handleCompanyNameClick(newName) {
-    console.log(newName)
     this.setState({
       companyName: newName
     })

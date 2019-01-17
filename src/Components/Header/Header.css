@@ -8,3 +8,25 @@
     line-height: 25px;
     text-align: left;
 }
+
+.hiddenMenu {
+    width: 250px;
+    height: 100px;
+    display: none;
+    background-color: #333333;
+    padding: 10px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .colorSelector {
+      float: right;
+  }
+
+  .nameSelector {
+      text-align: center;
+  }
+  
+  .showMenu {
+    display: block;
+  }
